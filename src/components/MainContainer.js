@@ -23,7 +23,8 @@ function MainContainer() {
   }
 
   const handleRemoveStock=(stockToRemove)=>{
-    setMyStocks(currentMyStocks=>currentMyStocks.filter(stock => stock.id !== stockToRemove))
+    console.log(stockToRemove)
+    setMyStocks(currentMyStocks=>currentMyStocks.filter(stock => stock !== stockToRemove))
   }
 
   const handleToggleSort = (e)=>{
